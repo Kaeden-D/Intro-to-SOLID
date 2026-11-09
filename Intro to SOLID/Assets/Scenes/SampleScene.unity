@@ -464,6 +464,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57699be8726b07e44bbe995caccf011f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standardHealth: {fileID: 602521696}
+  numHitsHealth: {fileID: 1947098606}
+  immuneHealth: {fileID: 771143713}
 --- !u!4 &732322320
 Transform:
   m_ObjectHideFlags: 0
