@@ -27,10 +27,15 @@ public class StandardHealth : MonoBehaviour, IHealth
 
         currentHealth -= amount;
 
+        Debug.Log("StandardHealth: TakeDamage called." + " Current Health: " + currentHealth + "/" + startingHealth);
+
         OnHPPctChanged(CurrentHpPct);
 
         if (CurrentHpPct <= 0)
+        {
             Die();
+            Debug.Log("StandardHealth: Has Died");
+        }
     }
 
     private void Die()

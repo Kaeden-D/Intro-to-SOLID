@@ -34,10 +34,15 @@ public class NumberOfHitsHealth : MonoBehaviour, IHealth
 
             hitsRemaining--;
 
+            Debug.Log("NumberOfHitsHealth: TakeDamage called." + " Current Health: " + hitsRemaining + "/" + healthInHits);
+
             OnHPPctChanged(CurrentHpPct);
 
             if (hitsRemaining <= 0)
-                OnDied();
+            {
+                OnDied(); 
+                Debug.Log("NumberOfHitsHealth: Has Died");
+            }
         }
     }
 
